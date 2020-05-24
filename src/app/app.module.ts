@@ -10,11 +10,25 @@ import { environment } from '../environments/environment';
 
 // components
 import { HomeComponent } from './components/home/home.component';
+import { MeetsComponent } from './components/meets/meets.component';
+import { SpecialistsComponent } from './components/specialists/specialists.component';
+import { InfoSpecialistComponent } from './components/info-specialist/info-specialist.component';
+import { SurgeriesComponent } from './components/surgeries/surgeries.component';
+import { MeetsAtHomeComponent } from './components/meets-at-home/meets-at-home.component';
+import { NavigationComponent } from './shared/navigation/navigation.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    MeetsComponent,
+    SpecialistsComponent,
+    InfoSpecialistComponent,
+    SurgeriesComponent,
+    MeetsAtHomeComponent,
+    NavigationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+$main-color: #00A7E1;
+$secondary-color: #0B4F6C;
+
+$degrade-180 : linear-gradient(180deg, $secondary-color 0%, $main-color 50%);
+$degrade-90: linear-gradient(90deg, $secondary-color 0%, $main-color 50%);
+$degrade-0: linear-gradient(0deg, $secondary-color 0%, $main-color 50%);
+$degrade-270: linear-gradient(270deg, $secondary-color 0%, $main-color 50%);
