@@ -1,6 +1,8 @@
 <nav class="hide-on-med-and-down">
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo">Logo</a>
+        <a [routerLink]="['/home']" class="brand-logo">
+            <img class="responsive-img logo" src="../../../assets/images/mainLogo.png" alt="logo">
+        </a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li routerLinkActive="active"><a [routerLink]="['/home']">Inicio</a></li>
             <li routerLinkActive="active"><a [routerLink]="['/meets']">Cita medica</a></li>
@@ -14,11 +16,8 @@
     <li>
         <div class="user-view">
             <div class="background">
-            <img src="images/office.jpg">
+                <img src="../../../assets/images/mainLogo.png">
             </div>
-            <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-            <a href="#name"><span class="white-text name">John Doe</span></a>
-            <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div>
     </li>
     <li routerLinkActive="active"><a class="sidenav-close" [routerLink]="['/home']"><i class="material-icons">cloud</i>Inicio</a></li>

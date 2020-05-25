@@ -4,6 +4,7 @@
             <div class="col s12 center-align">
                 <h3>bienvenido a </h3>
                 <h1>medics</h1>
+                <i class="medium material-icons">arrow_downward</i>
             </div>
         </div>
     </div>
@@ -29,7 +30,7 @@
                             <img src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
                         </div>
                         <div class="card-action">
-                            <a href="#">Solicitar cita medica</a>
+                            <a [routerLink]="['/meets']">Solicitar cita medica</a>
                         </div>
                     </div>
                 </div>
@@ -39,7 +40,7 @@
                             <img src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
                         </div>
                         <div class="card-action">
-                            <a href="#">Cirugias</a>
+                            <a [routerLink]="['/surgeries']">Cirugias</a>
                         </div>
                     </div>
                 </div>
@@ -49,7 +50,7 @@
                             <img src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
                         </div>
                         <div class="card-action">
-                            <a href="#">Consulta en casa</a>
+                            <a [routerLink]="['/meetshome']">Consulta en casa</a>
                         </div>
                     </div>
                 </div>
@@ -61,7 +62,8 @@
         <div class="containter">
             <div class="row">
                 <div class="col s12 center-align">
-                    <h3>especialistas</h3>
+                    <h3 class="title">especialistas</h3>
+                    <div class="divider dividerTitle"></div>
                 </div>
             </div>
             <div class="row specialists">

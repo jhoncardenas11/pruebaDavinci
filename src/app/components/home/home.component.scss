@@ -1,24 +1,70 @@
+@import '../../../variables.scss';
+
 header{
     background-image: url(/assets/images/national-cancer-institute-NFvdKIhxYlU-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: calc(100vh - 64px);
-    h3{
+    height: auto;
+    h1, h3{
         margin: 0;
+        color: #ffffff;
+        font-weight: bold;
+        text-transform: uppercase;
     }
-    h1{
-        margin: 0;
+    h3{
+        margin-top: 20%;
+    }
+    i{
+        color: #ffffff;
+        margin-top: 5%;
     }
 }
 
 body{
+    .s1{
+        margin: 50px auto;
+        h4{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+    .s2{
+        margin: 50px auto;
+        .card{
+            height: 220px;
+            .card-action{
+                a{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
     .s3{
+        margin: 50px auto;
         .specialists{
             img{
                 width: 200px;
                 display: block;
                 margin: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .s2{
+        .card{
+            height: auto !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px){
+    body{
+        .s1{
+            h4{
+                font-size: 1em !important;
             }
         }
     }

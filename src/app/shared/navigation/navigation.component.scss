@@ -1,2 +1,23 @@
 @import '../../../variables.scss';
 
+nav{
+    background-color: $main-color;
+    .logo{
+        width: 50px;
+        margin: 10px;
+    }
+}
+
+.sidenav{
+    .user-view{
+        height: 100px;
+        .background{
+            background-color: $main-color;
+            img{
+                width: 50px;
+                display: block;
+                margin: 30px auto;
+            }
+        }
+    }
+}

@@ -1,8 +1,21 @@
+@import '../../../variables.scss';
+
 footer{
-    background-color: #cccccc;
+    background-color: $main-color;
     padding-top: 20px;
     padding-bottom: 20px;
     img{
-        width: 100px;
+        width: 80px;
+    }
+    ul{
+        li{
+            a{
+                color: #ffffff;
+            }
+            span{
+                color: #ffffff;
+                font-weight: bold;
+            }
+        }
     }
 }
