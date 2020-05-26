@@ -17,6 +17,7 @@ import { SurgeriesComponent } from './components/surgeries/surgeries.component';
 import { MeetsAtHomeComponent } from './components/meets-at-home/meets-at-home.component';
 import { NavigationComponent } from './shared/navigation/navigation.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     BrowserModule,
     AppRoutingModule,
     AngularFireDatabaseModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

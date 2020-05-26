@@ -67,37 +67,10 @@
                 </div>
             </div>
             <div class="row specialists">
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
-                </div>
-                <div class="col s4 m4 l3 center-align">
-                    <a [routerLink]="['/specialist/1']"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>Name doctor 1</p>
+                <div class="col s4 m4 l3 center-align" *ngFor="let specialist of specialists; index as i">
+                    <a routerLink="/specialist/{{specialist.$key}}"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
+                    <p>{{specialist.name}}</p>
+                    <p>{{specialist.categories}}</p>
                 </div>
             </div>
         </div>

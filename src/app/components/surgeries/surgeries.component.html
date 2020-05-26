@@ -24,37 +24,10 @@
             <div class="row">
                 <div class="col s12">
                     <ul class="collection">
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle">folder</i>
-                            <span class="title">Title</span>
-                            <p>First Line <br>
-                                Second Line
-                            </p>
-                            <a class="secondary-content tooltipped" data-position="bottom" data-tooltip="Impuestos adicionales"><i class="material-icons">grade</i></a>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle">folder</i>
-                            <span class="title">Title</span>
-                            <p>First Line <br>
-                                Second Line
-                            </p>
-                            <a class="secondary-content tooltipped" data-position="bottom" data-tooltip="Impuestos adicionales"><i class="material-icons">grade</i></a>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle green">insert_chart</i>
-                            <span class="title">Title</span>
-                            <p>First Line <br>
-                                Second Line
-                            </p>
-                            <a class="secondary-content tooltipped" data-position="bottom" data-tooltip="Sin impuestos adicionales"><i class="material-icons">grade</i></a>
-                        </li>
-                        <li class="collection-item avatar">
-                            <i class="material-icons circle red">play_arrow</i>
-                            <span class="title">Title</span>
-                            <p>First Line <br>
-                                Second Line
-                            </p>
-                            <a class="secondary-content tooltipped" data-position="bottom" data-tooltip="Impuestos adicionales"><i class="material-icons">grade</i></a>
+                        <li class="collection-item avatar" *ngFor="let surgerie of surgeries">
+                            <i class="material-icons circle">local_hospital</i>
+                            <span class="title">{{surgerie.name}}</span>
+                            <p>{{surgerie.cost}}</p>
                         </li>
                     </ul>
                 </div>
