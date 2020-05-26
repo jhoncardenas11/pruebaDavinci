@@ -25,8 +25,6 @@ export class SurgeriesComponent implements OnInit {
         x[`$key`] = element.key;
         this.surgeries.push(x as Surgerie);
       });
-
-      console.log(this.surgeries);
     });
   }
 

@@ -23,8 +23,6 @@ export class HomeComponent implements OnInit {
         x[`$key`] = element.key;
         this.specialists.push(x as Specialist);
       });
-
-      console.log(this.specialists);
     });
   }
 
