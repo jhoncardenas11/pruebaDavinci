@@ -17,6 +17,7 @@ export class SurgeriesComponent implements OnInit {
 
   ngOnInit(): void {
     $('.tooltipped').tooltip();
+    
     this.surgeriesService.getSurgerie().snapshotChanges().subscribe(item => {
       this.surgeries = [];
 

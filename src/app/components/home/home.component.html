@@ -27,7 +27,7 @@
                 <div class="col s12 m12 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
+                            <img class="responsive-img" src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
                         </div>
                         <div class="card-action">
                             <a [routerLink]="['/meets']">Solicitar cita medica</a>
@@ -37,7 +37,7 @@
                 <div class="col s12 m12 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
+                            <img class="responsive-img" src="../../../assets/images/hush-naidoo-yo01Z-9HQAw-unsplash.jpg">
                         </div>
                         <div class="card-action">
                             <a [routerLink]="['/surgeries']">Cirugias</a>
@@ -47,7 +47,7 @@
                 <div class="col s12 m12 l4">
                     <div class="card">
                         <div class="card-image">
-                            <img src="../../../assets/images/marek-levak-KOID4ns1Ii4-unsplash.jpg">
+                            <img class="responsive-img" src="../../../assets/images/hyttalo-souza-a1p0Z7RSkL8-unsplash.jpg">
                         </div>
                         <div class="card-action">
                             <a [routerLink]="['/meetshome']">Consulta en casa</a>
@@ -69,7 +69,7 @@
             <div class="row specialists">
                 <div class="col s4 m4 l3 center-align" *ngFor="let specialist of specialists; index as i">
                     <a routerLink="/specialist/{{specialist.$key}}"><img class="circle responsive-img" src="../../../assets/images/iconMedical.png"></a>
-                    <p>{{specialist.name}}</p>
+                    <p><b>{{specialist.name}}</b></p>
                     <p>{{specialist.categories}}</p>
                 </div>
             </div>
